@@ -1,0 +1,133 @@
+<body>
+<div class="form-body">
+
+<div class="form-container">
+<form action="/predict" method="POST" class="form-grid">
+
+    <!-- Gender -->
+    <div>
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+    </div>
+
+    <!-- Own Car -->
+    <div>
+        <label>Own Car</label>
+        <div class="radio-group">
+            <label><input type="radio" name="car" value="Yes"> Yes</label>
+            <label><input type="radio" name="car" value="No"> No</label>
+        </div>
+    </div>
+
+    <!-- Own House -->
+    <div>
+        <label>Own House</label>
+        <div class="radio-group">
+            <label><input type="radio" name="realty" value="Yes"> Yes</label>
+            <label><input type="radio" name="realty" value="No"> No</label>
+        </div>
+    </div>
+
+    <!-- Annual Income -->
+    <div>
+        <label>Annual Income</label>
+        <input type="number" name="income" required>
+    </div>
+
+    <!-- Income Type -->
+    <div>
+        <label>Income Type</label>
+        <select name="income_type">
+            <option>Working</option>
+            <option>Commercial associate</option>
+            <option>Pensioner</option>
+            <option>State servant</option>
+            <option>Student</option>
+        </select>
+    </div>
+
+    <!-- Education -->
+    <div>
+        <label>Education</label>
+        <select name="education">
+            <option>Secondary</option>
+            <option>Higher</option>
+            <option>Incomplete Higher</option>
+            <option>Lower Secondary</option>
+            <option>Academic Degree</option>
+        </select>
+    </div>
+
+    <!-- Family Status -->
+    <div>
+        <label>Family Status</label>
+        <select name="family_status">
+            <option>Single</option>
+            <option>Married</option>
+            <option>Civil marriage</option>
+            <option>Separated</option>
+            <option>Widow</option>
+        </select>
+    </div>
+
+    <!-- Housing Type -->
+    <div>
+        <label>Housing Type</label>
+        <select name="housing">
+            <option>House / apartment</option>
+            <option>With parents</option>
+            <option>Municipal apartment</option>
+            <option>Rented apartment</option>
+            <option>Office apartment</option>
+        </select>
+    </div>
+
+    <!-- Days Since Birth -->
+    <div>
+        <label>Days Since Birth</label>
+        <input type="number" name="days_birth" required>
+    </div>
+
+    <!-- Days Employed -->
+    <div>
+        <label>Days Employed</label>
+        <input type="number" name="days_employed" required>
+    </div>
+
+    <!-- Family Members -->
+    <div>
+        <label>Family Members</label>
+        <input type="number" name="family_members" required>
+    </div>
+
+    <!-- EMI Paid Off -->
+    <div>
+        <label>EMI Paid Off</label>
+        <div class="radio-group">
+            <label><input type="radio" name="paid_off" value="Yes"> Yes</label>
+            <label><input type="radio" name="paid_off" value="No"> No</label>
+        </div>
+    </div>
+
+    <!-- Past Dues -->
+    <div>
+        <label>Past Dues</label>
+        <input type="number" name="past_dues" required>
+    </div>
+
+    <!-- Number of Loans -->
+    <div>
+        <label>Number of Loans</label>
+        <input type="number" name="loans" required>
+    </div>
+
+    <button type="submit" class="btn">Predict</button>
+
+</form>
+</div>
+
+</div>
+</body>
